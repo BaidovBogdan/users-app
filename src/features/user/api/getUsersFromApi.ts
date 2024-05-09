@@ -1,7 +1,8 @@
 import axios from "axios";
 import { typeForUser } from "../typeForTs/type";
 
-export default async function getUsersFromApi() {
+export default async function getUsersFromApi() { 
+    
     try {
         const response = await axios.get("https://jsonplaceholder.typicode.com/users");
         const users: typeForUser[] = response.data.map((userData: any) => {

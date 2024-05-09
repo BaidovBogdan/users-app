@@ -1,13 +1,13 @@
 import "./button.module.css"
-import { ButtonProps } from "./typeForBtn"
+import { ButtonProps } from "./interfaceForBtn"
 
-export default function Button({ children }: ButtonProps) {
+export default function Button({ children , onClick}: ButtonProps) {
 
     
 
     return(
     <div>
-        <button>{ children }</button>
+        <button onClick={onClick}>{ children }</button>
     </div>
     )
 };

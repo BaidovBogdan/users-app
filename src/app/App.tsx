@@ -1,11 +1,10 @@
 import './App.css'
-import getUsersFromApi from '../features/user/api/getUsersFromApi'
+import UserCard from '../features/user/components/UserCard'
 
 function App() {
-  getUsersFromApi()
   return (
     <>
-      
+      <UserCard />
     </>
   )
 }
