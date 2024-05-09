@@ -1,10 +1,10 @@
 import './App.css'
-import UserCard from '../features/user/components/UserCard'
+import Routing from './routing'
 
 function App() {
   return (
     <>
-      <UserCard />
+      <Routing />
     </>
   )
 }
