@@ -1,11 +1,12 @@
 import './App.css'
-import Routing from './routing'
+import Users from '../widgets/UsersLocalStorage/UsersLocalStorage'
+
+
 
 function App() {
+
   return (
-    <>
-      <Routing />
-    </>
+      <Users />
   )
 }
 

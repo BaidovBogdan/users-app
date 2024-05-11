@@ -1,4 +1,4 @@
-export interface ButtonProps{
-    children: string;
+export type ButtonProps = {
+    children?: string;
     onClick?: () => void;
 }

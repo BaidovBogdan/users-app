@@ -4,8 +4,3 @@ button{
     border: none;
     box-shadow: 1px 1px 10px 1px blueviolet;
 }
-div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
