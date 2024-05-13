@@ -1,6 +1,6 @@
-import LeftAside from "./leftAside/leftAside";
-import RightAside from "./rightAside/rightAside";
-import "./styles/styles.css";
+import LeftAside from "./leftAside/left";
+import RightAside from "./rightAside/right";
+import "./styles/css.css";
 
 export default function UsersLocalStorage() {
     return (

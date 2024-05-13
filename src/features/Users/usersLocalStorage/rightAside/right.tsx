@@ -1,9 +1,9 @@
-import Button from "../../../shared/index";
-import Api from "../../../shared/api";
+import Button from "../../../../shared/index";
+import Api from "../../../../shared/api";
 import { useState } from "react";
-import {usersType} from "../../../shared/TypeUsers";
+import {usersType} from "../../../../shared/TypeUsers";
 import { useAtom } from "jotai";
-import { usersAtom } from "../../../shared/jotai/usersAtom";
+import { usersAtom } from "../../../../shared/jotai/usersAtom";
 
 
 
@@ -13,22 +13,20 @@ export default function rightAside() {
 
 
     const ShowUsers = async () => {
-      try{
-        const usersData = await Api();
-        setUsers(usersData);
-        setUserDataAtom(usersData)
+        try{
+          const usersData = await Api();
+          setUsers(usersData);
+          setUserDataAtom(usersData)
+        }
+        catch(error){
+          console.log(error);
+        }
+  
       }
-      catch(error){
-        console.log(error);
-      }
-
-    }
-    
-    console.log(`userDataAtom ${userDataAtom}`);
     
     return(
         <>
-            <aside>backend</aside>
+            <aside>backend
             <br />
             <br />
             <br />
@@ -45,10 +43,11 @@ export default function rightAside() {
                         email:{user.email}
                         <br />
                         <br />
-                         </li>
+                      </li>
                          
                 ))}
             </ul>
+            </aside>
         </>
     )
 };

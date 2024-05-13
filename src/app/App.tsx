@@ -1,5 +1,5 @@
 import './App.css'
-import Users from '../widgets/UsersLocalStorage/UsersLocalStorage'
+import Users from '../features/Users/index'
 
 
 
