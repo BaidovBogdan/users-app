@@ -1,12 +1,11 @@
 import './App.css'
-import Users from '../features/Users/index'
-
+import MainPage from '../pages/index'
 
 
 function App() {
 
   return (
-      <Users />
+      <MainPage/>
   )
 }
 

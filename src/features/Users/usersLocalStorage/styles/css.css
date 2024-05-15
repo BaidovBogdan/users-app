@@ -2,14 +2,10 @@
     display: flex;
     justify-content: space-around;
 }
-aside{
-    box-shadow: 1px 1px 1px 1px red;
+li{
+    list-style: none;
 }
-ul{
-    box-shadow: 1px 1px 10px 1px blueviolet;
-    width: 250px;
-}
-ul > li{
-    align-items: center;
-    padding: 10px;
+main{
+    display: flex;
+    flex-direction: column;
 }
