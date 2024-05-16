@@ -55,7 +55,8 @@ export default function UserData() {
     setUserEdit(prevState => ({
       ...prevState,
       [userId]: !prevState[userId],
-    }));
+    }
+  ));
     setTitleForBtns(prevTitles => ({
       ...prevTitles,
       [userId]: prevTitles[userId] === "EDIT" ? "SAVE" : "EDIT",
@@ -65,6 +66,14 @@ export default function UserData() {
       setPhone("");
       setEmail("");
       setName("");
+
+      if(name.length <= 0) {
+        alert("введи данные в name");
+    } else if(email.length <= 0) {
+        alert("введи данные в email");
+    } else if(phone.length <= 0) {
+        alert("введи данные в phone");
+    }
     }
   };
 
