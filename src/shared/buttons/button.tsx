@@ -1,9 +1,8 @@
-import "./button.module.css"
-import { ButtonProps } from "./interfaceForBtn"
+import { ButtonProps } from "./interfaceForBtn";
+import "./button.module.css";
 
-export default function Button({ children , onClick}: ButtonProps) {
+// Файл компоненты с большой буквы
 
-    return( 
-        <button onClick={onClick}>{ children }</button>
-    )
-};
+export default function Button({ children, onClick }: ButtonProps) {
+  return <button onClick={onClick}>{children}</button>;
+}

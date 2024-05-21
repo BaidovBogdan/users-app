@@ -1,12 +1,13 @@
-import './App.css'
-import MainPage from '../pages/index'
-
+// Импорты стилей всегда в конце
+import MainPage from "../pages";
+import "./App.css";
 
 function App() {
-
+  // лишняя пустая строка
   return (
-      <MainPage/>
-  )
+    // лишний таб
+    <MainPage />
+  );
 }
 
-export default App
+export default App;
